@@ -2,14 +2,14 @@
 
 <head>
     <title>WonderLand</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html">WonderLand</a>
+            <a href="../index.html">WonderLand</a>
 
             <a href="billeterie.php">Billeterie</a>
             <div class="dropdown">

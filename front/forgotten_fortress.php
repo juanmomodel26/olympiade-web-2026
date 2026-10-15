@@ -2,14 +2,14 @@
 
 <head>
     <title>WonderLand</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html">WonderLand</a>
+            <a href="../index.html">WonderLand</a>
 
             <a href="billeterie.php">Billeterie</a>
             <div class="dropdown">
@@ -23,7 +23,7 @@
             </div>
         </nav>
     </header>
-    <section class="parallax_crystal_cave">
+    <section class="parallax_forgotten_fortress">
         <div class="content">
             <h1>BIENVENUE À WONDERLAND</h1>
             <p>Découvrez un parc remplis d'imagination et de joie</p>
@@ -31,30 +31,32 @@
     </section>
     <div class="classique">
         <p>
-            La Grotte des Cristaux — Découvrez le pouvoir oublié de la magie.<br><br>
+            La Forteresse Oubliée — Une aventure au cœur du royaume.<br><br>
 
-            Au cœur des montagnes de WonderLand se cache un lieu que peu de voyageurs ont eu la chance de découvrir :
-            la Grotte des Cristaux.<br><br>
+            Au-delà des remparts des Terres Médiévales, dissimulée entre les montagnes et les cascades, 
+            se dresse une forteresse que le temps semble avoir oubliée.<br><br>
 
-            Selon les légendes du royaume, cette immense caverne serait née il y a des milliers d'années, 
-            lorsque les premiers magiciens déposèrent une source de magie pure au plus profond de la terre. 
-            Au fil des siècles, cette énergie mystérieuse donna naissance à des cristaux extraordinaires, 
-            capables d'illuminer les ténèbres et de révéler les secrets du monde.<br><br>
-            
-            Aujourd'hui, une ancienne porte de pierre vient d'être découverte, 
-            ouvrant l'accès à ce sanctuaire oublié. Les visiteurs sont invités à embarquer pour une expédition souterraine 
-            à travers des galeries scintillantes, des lacs aux eaux cristallines et des salles gigantesques où la magie semble encore vivante.<br><br>
+            Autrefois, elle était le siège d'un puissant seigneur dont le royaume s'étendait sur toutes les terres environnantes. 
+            Mais une nuit, dans des circonstances que nul ne parvint jamais à expliquer, 
+            ses portes furent scellées et ses habitants disparurent sans laisser de traces.<br><br>
 
-            Mais prenez garde : les cristaux ne sont pas de simples pierres précieuses. 
-            Ils renferment une énergie mystérieuse qui pourrait bien réveiller les gardiens de la caverne…<br><br>
+            Depuis, les voyageurs racontent que des lumières vacillent derrière ses meurtrières, 
+            que des bruits étranges résonnent dans ses souterrains et que les anciennes cloches sonnent parfois au milieu de la nuit.<br><br>
 
-            Entre émerveillement, mystère et frissons, préparez-vous à vivre un voyage inoubliable dans les profondeurs enchantées de WonderLand.
+            Aujourd'hui, une voie oubliée vient d'être rouverte. À bord d'embarcations inspirées des bateaux médiévaux, 
+            les visiteurs sont invités à pénétrer dans les douves et les passages secrets de la forteresse pour découvrir ce qui s'y cache.<br><br>
+
+            Des anciennes salles du trône aux oubliettes, en passant par les armureries et les souterrains inondés, 
+            chaque étape révèle un fragment de l'histoire du royaume.<br><br>
+
+            Mais prenez garde : certaines portes n'auraient jamais dû être rouvertes…<br><br>
+
+            Préparez-vous à une aventure immersive où mystère, histoire et frissons se mêlent au cœur d'un décor médiéval spectaculaire.
         </p>
     </div>
-
     <?php
     $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
-    $req = $bdd->prepare('select * from attraction where id = 2');
+    $req = $bdd->prepare('select * from attraction where id = 4');
     $req->execute();
     $result= $req->fetch(PDO::FETCH_ASSOC);
 
