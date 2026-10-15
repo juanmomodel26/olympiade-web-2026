@@ -14,6 +14,7 @@ $mdpverif = $result['mdp'];
 
 if ($user == "admin" and password_verify($mdp, $mdpverif)) {
     header("Location: ../front/espaceadmin.php");
+    
 } else if ($user == $name and password_verify($mdp, $mdpverif)) {
     header("Location: ../front/espaceclient.php");
     session_start();

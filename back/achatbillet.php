@@ -1,7 +1,21 @@
 <?php
+
 $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
-$stmt = $bdd->prepare("insert into billet (univers,description,image,taille_min_visiteur,status) values (:univers,:desc,:image,:taille,:status);");
+$stmt = $bdd->prepare("insert into billet (date_,email,id_tarif,status) values (:date,:email,:id_tarif,:status);");
 
-$result['email']= $_SESSION['email']; 
+$date = $_POST['date'];
+$id_tarif = $_POST['type'];
+$nmb = $_POST['nombre'];
+$email = $_POST['email'];
+$status="utilisable";
 
-print($result['email']);
+$stmt->bindParam(":date", $date);
+$stmt->bindParam(":id_tarif", $id_tarif);
+$stmt->bindParam("email", $email);
+$stmt->bindParam("status", $status);
+while ($nmb > 0){
+    $stmt-> execute();
+    $nmb--;
+    header("Location = ../front/espaceclient.php");
+}
+?>
