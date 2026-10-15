@@ -16,7 +16,9 @@
                 <button class="dropbutton">Attractions</button>
                 <div class="dropdown-content">
                     <a href="dragon_flight.php">L'envol des Dragons</a>
+                    <a href="crystal_cave.php">La grotte de cristal</a>
                     <a href="knight_tournament.php">Le tournoi des chevaliers</a>
+                    <a href="forgotten_fortress.php">La forteresse oubliée</a>
                 </div>
             </div>
         </nav>
@@ -29,24 +31,56 @@
     </section>
     <div class="classique">
         <p>
-            Le Tournoi des Chevaliers — Honneur, courage et gloire !<br>
+            Le Tournoi des Chevaliers — Honneur, courage et gloire !<br><br>
 
             Franchissez les portes de la forteresse et plongez au cœur d'un royaume médiéval où les chevaliers défendent
             leurs couleurs, où les bannières flottent au vent et où les exploits des plus grands héros se transmettent
-            de génération en génération.<br>
+            de génération en génération.<br><br>
 
             Dans la cour du château, un événement exceptionnel se prépare : le grand Tournoi des Chevaliers de
-            WonderLand.<br>
+            WonderLand.<br><br>
 
             Les visiteurs sont invités à rejoindre les tribunes et à embarquer dans une aventure au fil des douves pour
             assister aux épreuves des plus valeureux combattants du royaume. Joutes, démonstrations d'adresse et
-            rivalités entre maisons se succèdent dans une ambiance festive.<br>
+            rivalités entre maisons se succèdent dans une ambiance festive.<br><br>
 
             Ici, pas de magie ni de dragons : seuls comptent la bravoure, l'habileté et l'honneur. Chaque chevalier rêve
-            de remporter le tournoi et d'inscrire son nom dans la légende du royaume.<br>
+            de remporter le tournoi et d'inscrire son nom dans la légende du royaume.
 
         </p>
     </div>
+    <?php
+    $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
+    $req = $bdd->prepare('select * from attraction where id = 3');
+    $req->execute();
+    $result= $req->fetch(PDO::FETCH_ASSOC);
+
+    $id =  $result['ID'];
+    $univers = $result['univers'];
+    $taille = $result['taille_min_visiteur'];
+    $status = $result['status'];
+    ?>
+    <h1>Informations concernant l'attraction</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Univers</th>
+                <th scope="col">taille minimale visiteur</th>
+                <th scope="col">status</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><?php echo $univers; ?></th>
+                <th><?php echo $taille; ?> cm</th>
+                <th><?php echo $status; ?></th>
+            </tr>
+        </tbody>
+    </table>
+    <div class="billeterie">
+        <a href="billeterie.php"> Reserver une place </a>
+    </div>s
 </body>
 
 </html>

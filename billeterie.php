@@ -12,7 +12,9 @@
                     <button class="dropbutton">Attractions</button>
                     <div class="dropdown-content">
                         <a href="dragon_flight.php">L'envol des Dragons</a>
+                        <a href="crystal_cave.php">grotte de cristal</a>
                         <a href="knight_tournament.php">Le tournoi des chevaliers</a>
+                        <a href="forgotten_fortress.php">La forteresse oubliée</a>
                     </div> 
                 </div>
             </nav>

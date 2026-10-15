@@ -1,77 +1,88 @@
 /*////////////////////////////////////////////////////////////// NAVBAR /////////////////////////////////////////////////////////////////////////*/
 
 .navbar {
-  overflow: hidden;
-  background-color: #d81e1e;
-  font-family: Arial;
+    overflow: hidden;
+    background-color: #101329;
+    font-family: Arial;
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    float: left;
+    font-size: 16px;
+    color: #d8ad59;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar .admin {
+    float: right;
+    font-size: 16px;
+    color: #d8ad59;
+    text-align: center;
+
+    text-decoration: none;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
+    color: #d8ad59;
 }
 
 .dropdown .dropbutton {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #d8ad59;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(66, 66, 66);
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(66, 66, 66); 
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #101329;
+    color: #d8ad59;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: #d8ad59;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(66, 66, 66);
+    background-color: rgb(66, 66, 66);
 }
 
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 /*////////////////////////////////////////////////////////////// Background /////////////////////////////////////////////////////////////////////////*/
 
-.parallax_accueil{
+.parallax_accueil {
     height: 100%;
-    background: url("images/wonderlandaccueil.png" );
+    background: url("images/wonderlandaccueil.png");
     background-attachment: fixed;
     background-repeat: none;
     position: relative;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,14 +90,14 @@
 
 }
 
-.parallax_dragon_flight{
+.parallax_dragon_flight {
     height: 100%;
-    background: url("images/dragon_flight.png" );
+    background: url("images/dragon_flight.png");
     background-attachment: fixed;
     background-repeat: none;
     position: relative;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,14 +105,44 @@
 
 }
 
-.parallax_knight_tournament{
+.parallax_knight_tournament {
     height: 100%;
-    background: url("images/knight_tournament.png" );
+    background: url("images/knight_tournament.png");
     background-attachment: fixed;
     background-repeat: none;
     position: relative;
     background-size: cover;
-    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+
+}
+
+.parallax_crystal_cave {
+    height: 100%;
+    background: url("images/crystal_cave.png");
+    background-attachment: fixed;
+    background-repeat: none;
+    position: relative;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+
+}
+
+.parallax_forgotten_fortress {
+    height: 100%;
+    background: url("images/forgotten_fortress.png");
+    background-attachment: fixed;
+    background-repeat: none;
+    position: relative;
+    background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +165,8 @@
 .classique {
     width: 80%;
     padding: 80px;
-    background-color: white;
+    color: #d8ad59;
+    background-Color: #101329;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 
@@ -134,51 +176,158 @@
 
     border: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #d8ad59;;
 }
 
 /*////////////////////////////////////////////////////////////// blocs attractions /////////////////////////////////////////////////////////////////////////*/
-
-.dragon_flight{
-    width: 35%;
-    height:400px;
-    margin-left: 10%;
-    margin-right: 8%;
-
-    background: url("images/dragon_flight.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;   
-
-    border: solid;
-    border-radius: 1%;
-    border-color: black;
-
+.fantasy {
     display: inline-block;
+    width: 100%;
+    align-items: center;
     text-align: center;
+    color: #d8ad59;
+    margin-bottom: 2%;
+
+    .dragon_flight {
+        width: 35%;
+        height: 400px;
+
+        background: url("images/dragon_flight.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        border: solid;
+        border-radius: 1%;
+        border-color: black;
+
+        text-align: center;
+        display: inline-block;
+    }
+
+    .crystal_cave {
+        width: 35%;
+        height: 400px;   
+        
+        background: url("images/crystal_cave.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        border: solid;
+        border-radius: 1%;
+        border-color: black;
+
+        text-align: center;
+        display: inline-block;
+    }
 }
 
-.knight_tournament{
-    width: 35%;
-    height:400;
-    margin-right: 10%;
-
-    background: url("images/knight_tournament.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;   
-
-    border: solid;
-    border-radius: 1%;
-    border-color: black;
-
+.medival {
+    align-items: center;
     display: inline-block;
-    
+    width: 100%;
     text-align: center;
+    color: #d8ad59;;
+
+    .knight_tournament {
+        width: 35%;
+        height: 400;
+
+        background: url("images/knight_tournament.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        border: solid;
+        border-radius: 1%;
+        border-color: black;
+
+        display: inline-block;
+        text-align: center;
+    }
+
+    .forgotten_fortress {
+        width: 35%;
+        height: 400;
+
+        background: url("images/forgotten_fortress.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        border: solid;
+        border-radius: 1%;
+        border-color: black;
+
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+/*////////////////////////////////////////////////////////////// BODY /////////////////////////////////////////////////////////////////////////*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: "Georgia", "Times New Roman", serif;
+
+    background-color: #101329;
+    
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::-webkit-scrollbar-track {
+    background: #101329;
+}
+
+h1{
+    text-align: center;
+    color: #d8ad59;
+    padding-top: 5%;
+}
+
+table{
+    display: inline-table;
+    color: #d8ad59;
+    border: solid;
+    border-width: 1px;
+    margin: 2%;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: larger;
+    th{
+        border: solid;
+        border-width: 1px;
+        padding: 2%;
+        
+    }
+}
+
+.billeterie{
+    border: solid;
+    border-width: 1px;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 50px;
+
+    color: #d8ad59;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+} 
+
+
+.billeterie:hover {
+    color:#d8ad59; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 /*////////////////////////////////////////////////////////////// AFFICHAGE TEL /////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     /* affichage tel */
 }
-
-
