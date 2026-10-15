@@ -12,6 +12,6 @@ if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $mdp)) {
     $stmt->bindParam(":mdp", $mdp);
     $result = $stmt->execute();
     if ($result) {
-        header("Location: connexion.php");
+        header("Location: ../front/connexion.php");
     }
 }

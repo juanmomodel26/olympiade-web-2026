@@ -18,6 +18,6 @@
     }
     else
     {
-        header("Location: connexion.php");
+        header("Location: ../front/connexion.php");
     }
 ?>

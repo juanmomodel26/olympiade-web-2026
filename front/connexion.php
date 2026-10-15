@@ -5,20 +5,20 @@
         <link href="../style.css" rel="stylesheet">
     </head>
     <body>
-        <form action="verifconnexion.php" method="POST">
+        <form action="../back/verifconnexion.php" method="POST">
             <input type="text" name="username" placeholder="user" required>
             <input type="password" name="password" placeholder="mot de passe" required>
             <input type="submit" value="Se connecter">
         </form>
 
         
-        <!-- création d'un utilisateur -->
+        <!-- création d'un admin -->
 
-        <form action="inscription.php" method="POST">
+        <!-- <form action="../back/inscription.php" method="POST">
             <input type="text" name="name" placeholder="user" required>
             <input type="password" name="mdp" placeholder="mot de passe" required>
             <input type="submit" value="creer un compte">
-        </form>
+        </form> -->
         
     </body>
 </html>
