@@ -10,8 +10,6 @@
     <header>
         <nav class="navbar">
             <a href="../index.html">WonderLand</a>
-
-            <a href="billeterie.php">Billeterie</a>
             <div class="dropdown">
                 <button class="dropbutton">Attractions</button>
                 <div class="dropdown-content">
@@ -82,7 +80,7 @@
         </tbody>
     </table>
     <div class="billeterie">
-        <a href="billeterie.php"> Reserver une place </a>
+        <a href="connexion.php"> Reserver une place </a>
     </div>
 </body>
 

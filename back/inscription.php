@@ -2,7 +2,7 @@
 $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
 $mdp = $_POST["mdp"];
 $name = $_POST["name"];
-if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $mdp)) {
+if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,24}$/', $mdp)) {
     echo 'the password does not meet the requirements!';
 } else {
     $mdp = password_hash($mdp, PASSWORD_DEFAULT);
@@ -12,6 +12,8 @@ if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $mdp)) {
     $stmt->bindParam(":mdp", $mdp);
     $result = $stmt->execute();
     if ($result) {
+        header("Location: ../front/connexion.php");
+    } else {
         header("Location: ../front/connexion.php");
     }
 }

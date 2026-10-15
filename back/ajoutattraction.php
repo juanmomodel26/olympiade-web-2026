@@ -17,8 +17,8 @@ $stmt->bindParam(":taille", $taille);
 $stmt->bindParam(":status", $status);
 
 $stmt->execute();
-
 $result = $stmt->execute();
+
 if ($result) {
     header("Location: ../front/espaceadmin.php");
 }

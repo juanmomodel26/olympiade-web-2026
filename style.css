@@ -42,7 +42,7 @@
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(66, 66, 66); 
+    background-color: rgb(66, 66, 66);
 }
 
 .dropdown-content {
@@ -176,7 +176,8 @@
 
     border: solid;
     border-width: 2px;
-    border-color: #d8ad59;;
+    border-color: #d8ad59;
+    ;
 }
 
 /*////////////////////////////////////////////////////////////// blocs attractions /////////////////////////////////////////////////////////////////////////*/
@@ -206,8 +207,8 @@
 
     .crystal_cave {
         width: 35%;
-        height: 400px;   
-        
+        height: 400px;
+
         background: url("images/crystal_cave.png");
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -226,7 +227,8 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    color: #d8ad59;;
+    color: #d8ad59;
+    ;
 
     .knight_tournament {
         width: 35%;
@@ -270,7 +272,7 @@ body {
     font-family: "Georgia", "Times New Roman", serif;
 
     background-color: #101329;
-    
+
     overflow-x: hidden;
     position: relative;
 }
@@ -279,13 +281,13 @@ body::-webkit-scrollbar-track {
     background: #101329;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #d8ad59;
     padding-top: 5%;
 }
 
-table{
+table {
     display: inline-table;
     color: #d8ad59;
     border: solid;
@@ -296,15 +298,16 @@ table{
     margin-left: 30%;
     margin-right: 30%;
     font-size: larger;
-    th{
+
+    th {
         border: solid;
         border-width: 1px;
         padding: 2%;
-        
+
     }
 }
 
-.billeterie{
+.billeterie {
     border: solid;
     border-width: 1px;
     width: 10%;
@@ -317,14 +320,68 @@ table{
     padding: 14px 16px;
     text-decoration: none;
     outline: none;
-} 
+}
 
 
 .billeterie:hover {
-    color:#d8ad59; 
-    text-decoration:none; 
-    cursor:pointer;  
+    color: #d8ad59;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.container{
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: #d8ad59;
+    margin-bottom: 2%;
+}
+
+.formconn, .forminscr, .formachat{
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    padding: 40px 35px;
+
+    background: linear-gradient(145deg,
+            #10283b,
+            #091725);
+
+    border: 2px solid #c99a48;
+    border-radius: 18px 18px 8px 8px;
+
+    box-shadow:
+        0 0 0 5px rgba(201, 154, 72, 0.12),
+        0 15px 40px rgba(0, 0, 0, 0.55);
+
+    input:not([type="submit"]),
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 13px 15px;
+        margin-bottom: 18px;
+
+        background: #f0e2c7;
+        color: #263442;
+
+        border: 1px solid #b99a68;
+        border-radius: 7px;
+
+        font-family: Georgia, serif;
+        font-size: 15px;
+
+        
+    
+    }
+}
+
 
 /*////////////////////////////////////////////////////////////// AFFICHAGE TEL /////////////////////////////////////////////////////////////////////////*/
 
