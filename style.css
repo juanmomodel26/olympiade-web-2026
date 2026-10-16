@@ -287,22 +287,28 @@ h1 {
     padding-top: 5%;
 }
 
+.espaceadmin h1{
+    text-align: left;
+    color: #d8ad59;
+    padding-top: 2%;
+}
+
 table {
     display: inline-table;
     color: #d8ad59;
     border: solid;
     border-width: 1px;
     margin: 2%;
-    width: 40%;
+    width: 70%;
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: larger;
 
     th {
         border: solid;
         border-width: 1px;
-        padding: 2%;
+        padding: 3%;
 
     }
 }
@@ -338,7 +344,7 @@ table {
     margin-bottom: 2%;
 }
 
-.formconn, .forminscr, .formachat{
+.formconn, .forminscr, .formachat, .espaceadmin form{
     justify-content: center;
     display: inline-block;
     text-align: center;

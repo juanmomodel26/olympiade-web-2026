@@ -25,9 +25,9 @@
             <div class=formachat>
                 <form action="../back/achatbillet.php" method="POST">
                     <input type="text" name="type" required placeholder="1  +12ans, 2  3-12ans, 3  -3ans">
-                    <input type="text" name="nombre" required placeholder="nombre de billet(s)">
+                    <input type="number" name="nombre" required value="1" step="1" min="1">
                     <input type="email" name="email" required placeholder="email">
-                    <input type="date" name="date" required>
+                    <input type="date" name="date" min="<?= date('Y-m-d') ?>" required>
                     <input type="submit" value="valider la commande">
                 </form>
             </div>

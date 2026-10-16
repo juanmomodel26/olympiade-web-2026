@@ -16,6 +16,6 @@ $stmt->bindParam("status", $status);
 while ($nmb > 0){
     $stmt-> execute();
     $nmb--;
-    header("Location = ../front/espaceclient.php");
+    header("Location: ../front/espaceclient.php");
 }
 ?>

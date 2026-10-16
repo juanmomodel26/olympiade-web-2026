@@ -48,6 +48,9 @@
     </div>
 
     <?php
+
+use LDAP\Result;
+
     $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
     $req = $bdd->prepare('select * from attraction where id = 1');
     $req->execute();
@@ -57,15 +60,26 @@
     $univers = $result['univers'];
     $taille = $result['taille_min_visiteur'];
     $status = $result['status'];
+
+    $req = $bdd->prepare('select max(id_time) from attente where id_attraction = 1;');
+    $req->execute();
+    $result= $req->fetch(PDO::FETCH_ASSOC);
+    $id_time = $result['max(id_time)'];
+
+    $stmt = $bdd->prepare('select time_ from attente where id_attraction = 1 and id_time= :id_time');
+    $stmt -> bindParam(":id_time",$id_time);
+    $stmt->execute();
+    $result= $stmt->fetch(PDO::FETCH_ASSOC);
+    $time = $result['time_'];
     ?>
     <h1>Informations concernant l'attraction</h1>
     <table>
         <thead>
             <tr>
                 <th scope="col">Univers</th>
-                <th scope="col">taille minimale visiteur</th>
-                <th scope="col">status</th>
-                
+                <th scope="col">Taille minimale visiteur</th>
+                <th scope="col">Status</th>
+                <th scope="col">Temps d'attente</th>
             </tr>
         </thead>
         <tbody>
@@ -73,6 +87,7 @@
                 <th><?php echo $univers; ?></th>
                 <th><?php echo $taille; ?> cm</th>
                 <th><?php echo $status; ?></th>
+                <th><?php echo $time; ?> heure(s) d'attente</th>
             </tr>
         </tbody>
     </table>
