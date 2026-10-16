@@ -26,17 +26,37 @@
             <a href="en_direct.php">En Direct</a>
         </nav>
     </header>
-    <table>
-        <thead>
-            <tr>
-                <th>Attraction</th>
-                <th>Attente</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <th>
+        <table>
+            <thead>
+                <tr>
+                    <th>Attraction</th>
+                    <th>Attente</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vol du dragon celeste</td>
+                    <td>1h d'attente</td>
+                    <td>Ouvert</td>
+                </tr>
 
-            </th>
-        </tbody>
-    </table>
+                <tr>
+                    <td>Grotte de cristal</td>
+                    <td>25 minutes d'attente</td>
+                    <td>Ouvert</td>
+                </tr>
+
+                <tr>
+                    <td>tournoi des chevaliers</td>
+                    <td>N/A</td>
+                    <td>Fermé</td>
+                </tr>
+
+                <tr>
+                    <td>Forteresse abandonnée</td>
+                    <td>2h d'attente</td>
+                    <td>ouvert</td>
+                </tr>
+            </tbody>
+        </table>

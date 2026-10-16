@@ -310,9 +310,15 @@ table {
         border-width: 1px;
         padding: 3%;
     }
+    td {
+        border: solid;
+        border-width: 1px;
+        border-color: #d8ad59;
+        padding: 15px;
+    }
 }
 
-.affichagebillet {
+.affichagebillet{
     color: #d8ad59;
     margin: 2%;
     width: 100%;
