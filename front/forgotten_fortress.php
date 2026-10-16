@@ -24,12 +24,13 @@
                     <a href="forgotten_fortress.php">La forteresse oubliée</a>
                 </div>
             </div>
+            <a href="en_direct.php">En Direct</a>
         </nav>
     </header>
     <section class="parallax_forgotten_fortress">
         <div class="content">
-            <h1>BIENVENUE À WONDERLAND</h1>
-            <p>Découvrez un parc remplis d'imagination et de joie</p>
+            <h1>La forteresse oubliée</h1>
+            <p>Apprenez l'histoire d'un monde passé</p>
         </div>
     </section>
     <div class="classique">

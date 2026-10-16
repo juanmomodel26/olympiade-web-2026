@@ -13,8 +13,8 @@
         </nav>
         <h1>Espace Administrateur</h1>
         <div class="espaceadmin">
-            
-        <h1>Ajout attraction</h1>
+
+            <h1>Ajout attraction</h1>
             <form action="../back/ajoutattraction.php" method="POST">
                 <input type="text" name="univers" required placeholder="type, ex : fantasy">
                 <input type="text" name="description" required placeholder="desc, ex : dragon_flight">
@@ -52,6 +52,13 @@
             <form action="affichagebilletadmin.php">
                 <input type="submit" value="voir la liste des billets achetés">
             </form>
+
+            <h1>Valider buillet</h1>
+            <form action="../back/modifstatusbillet.php" method="POST">
+                <input type="text" name="id" placeholder="id du billet">
+                <input type="submit" value="voir la liste des billets achetés">
+            </form>
+
             <h1>deconnexion</h1>
             <form class="formdeco" action="../back/deconnexion.php">
                 <input type="submit" value="se deconnecter">

@@ -23,12 +23,13 @@
                     <a href="forgotten_fortress.php">La forteresse oubliée</a>
                 </div>
             </div>
+            <a href="en_direct.php">En Direct</a>
         </nav>
     </header>
     <section class="parallax_crystal_cave">
         <div class="content">
-            <h1>BIENVENUE À WONDERLAND</h1>
-            <p>Découvrez un parc remplis d'imagination et de joie</p>
+            <h1>La grotte de cristal</h1>
+            <p>Une attraction qui vous en fait voir de toutes les couleures</p>
         </div>
     </section>
     <div class="classique">

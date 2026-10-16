@@ -24,12 +24,13 @@
                     <a href="forgotten_fortress.php">La forteresse oubliée</a>
                 </div>
             </div>
+            <a href="en_direct.php">En Direct</a>
         </nav>
     </header>
     <section class="parallax_dragon_flight">
         <div class="content">
-            <h1>BIENVENUE À WONDERLAND</h1>
-            <p>Découvrez un parc remplis d'imagination et de joie</p>
+            <h1> Le Vol du Dragon Céleste</h1>
+            <p>Une attraction vous fait voltiger dans tous les sens</p>
         </div>
     </section>
     <div class="classique">

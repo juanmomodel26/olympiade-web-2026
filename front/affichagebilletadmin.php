@@ -59,7 +59,7 @@
 
     <div class="container">
         <form class="formretour" action="espaceadmin.php">
-            <input type="submit" value="retourner sur la page de billeterie">
+            <input type="submit" value="retourner sur la page administrateur">
         </form>
     </div>
 </body>

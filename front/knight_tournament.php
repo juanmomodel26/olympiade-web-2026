@@ -24,12 +24,13 @@
                     <a href="forgotten_fortress.php">La forteresse oubliée</a>
                 </div>
             </div>
+            <a href="en_direct.php">En Direct</a>
         </nav>
     </header>
     <section class="parallax_knight_tournament">
         <div class="content">
-            <h1>BIENVENUE À WONDERLAND</h1>
-            <p>Découvrez un parc remplis d'imagination et de joie</p>
+            <h1>Le tournoi des chevaliers</h1>
+            <p>Ayez le courage de montrer vos valeurs</p>
         </div>
     </section>
     <div class="classique">

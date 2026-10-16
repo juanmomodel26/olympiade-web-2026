@@ -18,6 +18,7 @@
                 <a href="forgotten_fortress.php">La forteresse oubliée</a>
             </div>
         </div>
+        <a href="en_direct.php">En Direct</a>
     </nav>
     <div class="container">
         <div class="formconn">
