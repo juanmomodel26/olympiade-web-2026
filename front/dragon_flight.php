@@ -7,6 +7,10 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+
+    ?>
     <header>
         <nav class="navbar">
             <a href="../index.html">WonderLand</a>
@@ -30,6 +34,7 @@
     </section>
     <div class="classique">
         <p>
+
             Le Vol du Dragon Céleste — Envolez-vous vers l'impossible !<br><br>
 
             Depuis la nuit des temps, une ancienne légende raconte qu'au-delà des nuages se cache le Royaume des Dragons
@@ -49,12 +54,12 @@
 
     <?php
 
-use LDAP\Result;
+    use LDAP\Result;
 
     $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
     $req = $bdd->prepare('select * from attraction where id = 1');
     $req->execute();
-    $result= $req->fetch(PDO::FETCH_ASSOC);
+    $result = $req->fetch(PDO::FETCH_ASSOC);
 
     $id =  $result['ID'];
     $univers = $result['univers'];
@@ -63,13 +68,13 @@ use LDAP\Result;
 
     $req = $bdd->prepare('select max(id_time) from attente where id_attraction = 1;');
     $req->execute();
-    $result= $req->fetch(PDO::FETCH_ASSOC);
+    $result = $req->fetch(PDO::FETCH_ASSOC);
     $id_time = $result['max(id_time)'];
 
     $stmt = $bdd->prepare('select time_ from attente where id_attraction = 1 and id_time= :id_time');
-    $stmt -> bindParam(":id_time",$id_time);
+    $stmt->bindParam(":id_time", $id_time);
     $stmt->execute();
-    $result= $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $time = $result['time_'];
     ?>
     <h1>Informations concernant l'attraction</h1>
@@ -93,9 +98,15 @@ use LDAP\Result;
     </table>
 
     <div class="billeterie">
-        <a href="connexion.php"> Reserver une place </a>
+        <a href="<?php
+                    if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
+                        echo 'espaceclient.php';
+                    } else {
+                        echo 'connexion.php';
+                    }
+                    ?>"> Reserver une place </a>
     </div>
-    
+
 </body>
 
 </html>

@@ -25,7 +25,7 @@
 
 
     $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
-    $stmt = $bdd->prepare("select * from billet;");
+    $stmt = $bdd->prepare("select * from billet where status = 'utilisable';");
     
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -39,6 +39,7 @@
                     <th>email</th>
                     <th>status</th>
                     <th>type</th>
+                    <th>code</th>
                 </tr>
             </thead>
             <tbody>
@@ -48,7 +49,8 @@
                         <td><?= $ligne['date_'] ?></td>
                         <td><?= $ligne['email'] ?></td>
                         <td><?= $ligne['status'] ?></td>
-                        <td><?= $ligne['ID_tarif'] ?></td>
+                        <td><?= $ligne['id_tarif'] ?></td>
+                        <td><?= $ligne['code'] ?></td>
                     </tr>
                 <?php } ?>
             </tbody>

@@ -35,7 +35,11 @@
         <form action="affichagebilletvisiteur.php">
             <input type="submit" value="voir liste des billets achetés">
         </form>
+        <form class="formdeco" action="../back/deconnexion.php">
+            <input type="submit" value="se deconnecter">
+        </form>
     </div>
+
 
 </body>
 

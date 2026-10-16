@@ -313,11 +313,8 @@ table {
 }
 
 .affichagebillet {
-    /* display: inline-table; */
     color: #d8ad59;
-    border: solid;
-    border-width: 1px;
-    /* margin: 2%; */
+    margin: 2%;
     width: 100%;
     text-align: left;
 
@@ -329,6 +326,7 @@ table {
         border: solid;
         border-width: 1px;
         border-color: #d8ad59;
+        padding: 15px;
     }
     td {
         border: solid;

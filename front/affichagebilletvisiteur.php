@@ -35,11 +35,10 @@
         <table>
             <thead>
                 <tr>
-
                     <th>date</th>
-
                     <th>status</th>
                     <th>type</th>
+                    <th>code</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,7 +46,8 @@
                     <tr>
                         <td><?= $ligne['date_'] ?></td>
                         <td><?= $ligne['status'] ?></td>
-                        <td><?= $ligne['ID_tarif'] ?></td>
+                        <td><?= $ligne['id_tarif'] ?></td>
+                        <td><?= $ligne['code'] ?></td>
                     </tr>
                 <?php } ?>
             </tbody>
