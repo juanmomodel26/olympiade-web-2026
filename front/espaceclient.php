@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>WonderLand</title>
     <link href="../style.css" rel="stylesheet">
@@ -19,17 +20,17 @@
                 </div>
             </div>
         </nav>
-
-        <h1>reservation de billets</h1>
-        <div class=container>
-            <div class=formachat>
-                <form action="../back/achatbillet.php" method="POST">
-                    <input type="text" name="type" required placeholder="1  +12ans, 2  3-12ans, 3  -3ans">
-                    <input type="number" name="nombre" required value="1" step="1" min="1">
-                    <input type="email" name="email" required placeholder="email">
-                    <input type="date" name="date" min="<?= date('Y-m-d') ?>" required>
-                    <input type="submit" value="valider la commande">
-                </form>
-            </div>
-        </div>
     </header>
+    <h1>reservation de billets</h1>
+    <div class=container>
+        <form class="formachat" action="../back/payementbillet.php" method="POST">
+            <input type="number" name="type" required placeholder="1  +12ans, 2  3-12ans, 3  -3ans" step="1" min="1" max="3">
+            <input type="number" name="nombre" required value="1" step="1" min="1">
+            <input type="email" name="email" required placeholder="email">
+            <input type="date" name="date" min="<?= date('Y-m-d') ?>" required>
+            <button type="submit">"valider la commande"</button>
+        </form>
+    </div>
+</body>
+
+</html>

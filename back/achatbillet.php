@@ -13,9 +13,16 @@ $stmt->bindParam(":date", $date);
 $stmt->bindParam(":id_tarif", $id_tarif);
 $stmt->bindParam("email", $email);
 $stmt->bindParam("status", $status);
+
 while ($nmb > 0){
     $stmt-> execute();
     $nmb--;
     header("Location: ../front/espaceclient.php");
+}
+if ($nmb == 0){
+    echo("fail");
+}
+if ($nmb >0){
+    echo($nmb);
 }
 ?>
