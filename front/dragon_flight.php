@@ -93,7 +93,7 @@
                 <th><?php echo $univers; ?></th>
                 <th><?php echo $taille; ?> cm</th>
                 <th><?php echo $status; ?></th>
-                <th><?php echo $time; ?> heure(s) d'attente</th>
+                <th><?php echo $time ?? '0'; ?> heure(s) d'attente</th>
             </tr>
         </tbody>
     </table>

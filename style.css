@@ -76,7 +76,7 @@
 /*////////////////////////////////////////////////////////////// Background /////////////////////////////////////////////////////////////////////////*/
 
 .parallax_accueil {
-    height: 100%;
+    height: auto;
     background: url("images/wonderlandaccueil.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -91,7 +91,7 @@
 }
 
 .parallax_dragon_flight {
-    height: 100%;
+    height: auto;
     background: url("images/dragon_flight.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -106,7 +106,7 @@
 }
 
 .parallax_knight_tournament {
-    height: 100%;
+    height: auto;
     background: url("images/knight_tournament.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -121,7 +121,7 @@
 }
 
 .parallax_crystal_cave {
-    height: 100%;
+    height: auto;
     background: url("images/crystal_cave.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -136,7 +136,7 @@
 }
 
 .parallax_forgotten_fortress {
-    height: 100%;
+    height: auto;
     background: url("images/forgotten_fortress.png");
     background-attachment: fixed;
     background-repeat: none;

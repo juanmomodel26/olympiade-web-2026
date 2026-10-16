@@ -10,21 +10,26 @@ $id_tarif = $_POST['type'];
 $nmb = $_POST['nombre'];
 $email = $_POST['email'];
 $status = "utilisable";
+date_default_timezone_set("Europe/Paris");
 
+$heureActuelle = (int) date("H");
 
 $stmt->bindParam(":date", $date);
 $stmt->bindParam(":id_tarif", $id_tarif);
 $stmt->bindParam(":email", $email);
 $stmt->bindParam(":status", $status);
 
-
-while ($nmb > 0) {
-    $req = $bdd->prepare("select max(id) from billet");
-    $req->execute();
-    $id = $req->fetchColumn();
-    $code = password_hash($id, PASSWORD_DEFAULT);
-    $stmt->bindParam(":code", $code);
-    $stmt->execute();
-    $nmb--;
-    header("Location: ../front/espaceclient.php");
+if ($heureActuelle > 10 && $heureActuelle <= 19) {
+    while ($nmb > 0) {
+        $req = $bdd->prepare("select max(id) from billet");
+        $req->execute();
+        $id = $req->fetchColumn();
+        $code = password_hash($id, PASSWORD_DEFAULT);
+        $stmt->bindParam(":code", $code);
+        $stmt->execute();
+        $nmb--;
+        header("Location: ../front/espaceclient.php");
+    }
+}else{
+    echo("revenez demain");
 }
