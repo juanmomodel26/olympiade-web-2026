@@ -23,7 +23,7 @@
     <h1>reservation de billets</h1>
     <div class=container>
         <!-- <form action="../back/achatbillet.php" method="POST"> -->
-        <form id="formachat" action="achatbillet.php" method="POST">
+        <form id="formconfirm" action="achatbillet.php" method="POST">
             <?php
             $type = $_POST['type'];
             $nombre = $_POST['nombre'];
@@ -47,7 +47,7 @@
             <input type="submit" value="confirmer le payement">
         </form>
 
-        <form action="../front/espaceclient.php">
+        <form id="formannuler" action="../front/espaceclient.php">
             <input type="submit" value="annuler le payement">
         </form>
     </div>

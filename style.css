@@ -287,7 +287,7 @@ h1 {
     padding-top: 5%;
 }
 
-.espaceadmin h1{
+.espaceadmin h1 {
     text-align: left;
     color: #d8ad59;
     padding-top: 2%;
@@ -309,7 +309,32 @@ table {
         border: solid;
         border-width: 1px;
         padding: 3%;
+    }
+}
 
+.affichagebillet {
+    /* display: inline-table; */
+    color: #d8ad59;
+    border: solid;
+    border-width: 1px;
+    /* margin: 2%; */
+    width: 100%;
+    text-align: left;
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+
+    th {
+        border: solid;
+        border-width: 1px;
+        border-color: #d8ad59;
+    }
+    td {
+        border: solid;
+        border-width: 1px;
+        border-color: #d8ad59;
+        padding: 15px;
     }
 }
 
@@ -335,7 +360,7 @@ table {
     cursor: pointer;
 }
 
-.container{
+.container {
     display: inline-block;
     width: 100%;
     align-items: center;
@@ -344,7 +369,12 @@ table {
     margin-bottom: 2%;
 }
 
-.formconn, .forminscr, .formachat, .espaceadmin form{
+.formconn,
+.forminscr,
+#formconfirm,
+.formachat,
+.formretour,
+.espaceadmin form {
     justify-content: center;
     display: inline-block;
     text-align: center;
@@ -383,8 +413,8 @@ table {
         font-family: Georgia, serif;
         font-size: 15px;
 
-        
-    
+
+
     }
 }
 

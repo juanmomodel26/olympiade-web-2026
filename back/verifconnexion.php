@@ -14,10 +14,10 @@ $mdpverif = $result['mdp'];
 
 if ($user == "admin" and password_verify($mdp, $mdpverif)) {
     header("Location: ../front/espaceadmin.php");
-    
 } else if ($user == $name and password_verify($mdp, $mdpverif)) {
+    session_start();
+    $_SESSION['email'] = $_POST['username'];
     header("Location: ../front/espaceclient.php");
-    
 } else {
     header("Location: ../front/connexion.php");
 }

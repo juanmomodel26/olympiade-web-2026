@@ -22,15 +22,21 @@
         </nav>
     </header>
     <h1>reservation de billets</h1>
+    <?php session_start();
+    $email = $_SESSION['email']; ?>
     <div class=container>
         <form class="formachat" action="../back/payementbillet.php" method="POST">
             <input type="number" name="type" required placeholder="1  +12ans, 2  3-12ans, 3  -3ans" step="1" min="1" max="3">
             <input type="number" name="nombre" required value="1" step="1" min="1">
-            <input type="email" name="email" required placeholder="email">
+            <input type="hidden" name="email" value="<?= $email; ?>">
             <input type="date" name="date" min="<?= date('Y-m-d') ?>" required>
-            <button type="submit">"valider la commande"</button>
+            <button type="submit">valider la commande</button>
+        </form>
+        <form action="affichagebilletvisiteur.php">
+            <input type="submit" value="voir liste des billets achetés">
         </form>
     </div>
+
 </body>
 
 </html>

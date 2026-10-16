@@ -45,7 +45,11 @@
                 <input type="text" name="id" required placeholder="id attraction">
                 <input type="text" name="time" required placeholder="temps d'attente attraction">
                 <input type="submit" value="modifier temps d'attente d'attraction">
-                
+
+            </form>
+            <h1>Liste des billets</h1>
+            <form action="affichagebilletadmin.php">
+                <input type="submit" value="voir la liste des billets achetés">
             </form>
             <div class="billeterie"><a href="../index.html">Se deconnecter</a></div>
 
