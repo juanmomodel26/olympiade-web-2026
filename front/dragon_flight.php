@@ -59,7 +59,7 @@
     $req->execute();
     $result = $req->fetch(PDO::FETCH_ASSOC);
 
-    $id =  $result['ID'];
+    $id =  $result['id'];
     $univers = $result['univers'];
     $taille = $result['taille_min_visiteur'];
     $status = $result['status'];

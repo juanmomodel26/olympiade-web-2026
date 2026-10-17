@@ -20,7 +20,7 @@ Ouvrez le projet dans votre navigateur à l'adresse suivante : http://localhost/
 ///////////////////// INFO PROJET //////////////////////
 
 création des utilisateurs : 
-- admin : nom d'utilisateur "admin", mdp 12-30 char
+- admin : nom d'utilisateur "admin", mdp 12-30 char (modifier type="email" en "text" de forminscr /front/connexion.php pour pouvoir mettre "admin")
 - user : email, mdp 12-30char
 
 Figma : https://www.figma.com/design/BbDjns1vcDYohMnOX805Xt/Sans-titre?node-id=0-1&p=f&t=N9vVyLN9oov0AVg4-0
