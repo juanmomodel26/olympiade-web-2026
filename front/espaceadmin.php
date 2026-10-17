@@ -82,5 +82,5 @@ if(isset($_SESSION['email']) && $_SESSION['email']=='admin')
 <?php }
 
 else{
-header("Location: connexion.php");
+    header("Location: connexion.php");
 }

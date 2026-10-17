@@ -19,7 +19,7 @@ $stmt->bindParam(":id_tarif", $id_tarif);
 $stmt->bindParam(":email", $email);
 $stmt->bindParam(":status", $status);
 
-if ($heureActuelle >= 10 && $heureActuelle <= 19) {
+if ($heureActuelle >= 8 && $heureActuelle <= 19) {
     while ($nmb > 0) {
         $req = $bdd->prepare("select max(id) from billet");
         $req->execute();

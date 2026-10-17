@@ -1,8 +1,8 @@
 create database olympiade;
 use olympiade;
 
-create user olympiade identified by "olympiade";
-grant select, update, delete on olympiade.* to olympiade;
+create user olympiade@localhost identified by "olympiade";
+grant ALL on olympiade.* to olympiade@localhost;
 
 drop table billet if exist;
 drop table tarifs if exist;
@@ -45,6 +45,13 @@ CREATE TABLE billet(
    id_tarif INT NOT NULL,
    PRIMARY KEY(id),
    FOREIGN KEY(id_tarif) REFERENCES tarifs(id_tarif)
+);
+
+create table utilisateur(
+   id INT AUTO_INCREMENT,
+   name VARCHAR(30),
+   mdp VARCHAR(255),
+   PRIMARY KEY(id)
 );
 
 insert into attente (id_attraction,time_,heure) value (1,2,"2026-10-17 8:12:25");
