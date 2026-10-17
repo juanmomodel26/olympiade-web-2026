@@ -4,10 +4,11 @@ use olympiade;
 create user olympiade@localhost identified by "olympiade";
 grant ALL on olympiade.* to olympiade@localhost;
 
-drop table billet if exist;
-drop table tarifs if exist;
-drop table attraction if exist;
-drop table attente if exist;
+drop table billet if exists;
+drop table tarifs if exists;
+drop table attraction if exists;
+drop table attente if exists;
+drop table utilisateur if exists;
 
 
 
