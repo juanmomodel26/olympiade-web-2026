@@ -19,7 +19,7 @@ $stmt->bindParam(":id_tarif", $id_tarif);
 $stmt->bindParam(":email", $email);
 $stmt->bindParam(":status", $status);
 
-if ($heureActuelle > 10 && $heureActuelle <= 19) {
+if ($heureActuelle >= 10 && $heureActuelle <= 19) {
     while ($nmb > 0) {
         $req = $bdd->prepare("select max(id) from billet");
         $req->execute();
@@ -31,5 +31,11 @@ if ($heureActuelle > 10 && $heureActuelle <= 19) {
         header("Location: ../front/espaceclient.php");
     }
 }else{
-    echo("revenez demain");
+    echo("billeterie fermée");
+    ?>
+    <!-- <form action="../front/espaceclient.php">
+        <input type="submit" value="retourner dane l'espace client">
+    </form> -->
+
+    <?php
 }

@@ -14,7 +14,6 @@
     <header>
         <nav class="navbar">
             <a href="../index.html">WonderLand</a>
-
             <div class="dropdown">
                 <button class="dropbutton">Attractions</button>
                 <div class="dropdown-content">
@@ -54,7 +53,7 @@
         </p>
     </div>
     <?php
-    $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
+    $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'root');
     $req = $bdd->prepare('select * from attraction where id = 3');
     $req->execute();
     $result = $req->fetch(PDO::FETCH_ASSOC);
@@ -96,12 +95,12 @@
     </table>
     <div class="billeterie">
         <a href="<?php
-                    if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
-                        echo 'espaceclient.php';
-                    } else {
-                        echo 'connexion.php';
-                    }
-                    ?>"> Reserver une place </a>
+            if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
+                echo 'espaceclient.php';
+            } else {
+                echo 'connexion.php';
+            }
+            ?>"> Reserver une place </a>
     </div>
 </body>
 

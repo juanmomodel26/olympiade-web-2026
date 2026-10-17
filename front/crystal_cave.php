@@ -67,7 +67,6 @@
     $taille = $result['taille_min_visiteur'];
     $status = $result['status'];
 
-
     $req = $bdd->prepare('select max(id_time) from attente where id_attraction = 2;');
     $req->execute();
     $result = $req->fetch(PDO::FETCH_ASSOC);
@@ -100,12 +99,12 @@
     </table>
     <div class="billeterie">
         <a href="<?php
-                    if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
-                        echo 'espaceclient.php';
-                    } else {
-                        echo 'connexion.php';
-                    }
-                    ?>"> Reserver une place </a>
+            if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
+                echo 'espaceclient.php';
+            } else {
+                echo 'connexion.php';
+            }
+            ?>"> Reserver une place </a>
     </div>
 </body>
 

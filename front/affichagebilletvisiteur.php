@@ -26,7 +26,7 @@
     $email = $_SESSION['email'];
 
     $bdd = new PDO('mysql:host=localhost;dbname=olympiade;charset=utf8', 'olympiade', 'olympiade');
-    $stmt = $bdd->prepare("select * from billet where email = :email;");
+    $stmt = $bdd->prepare("select * from billet where email = :email and status = 'utilisable';");
     $stmt->bindParam(":email", $email);
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);

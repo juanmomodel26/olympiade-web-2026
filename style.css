@@ -76,7 +76,7 @@
 /*////////////////////////////////////////////////////////////// Background /////////////////////////////////////////////////////////////////////////*/
 
 .parallax_accueil {
-    height: auto;
+    height: 100%;
     background: url("images/wonderlandaccueil.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -91,7 +91,7 @@
 }
 
 .parallax_dragon_flight {
-    height: auto;
+    height: 100%;
     background: url("images/dragon_flight.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -106,7 +106,7 @@
 }
 
 .parallax_knight_tournament {
-    height: auto;
+    height: 100%;
     background: url("images/knight_tournament.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -117,11 +117,10 @@
     align-items: center;
     justify-content: center;
     min-height: 400px;
-
 }
 
 .parallax_crystal_cave {
-    height: auto;
+    height: 100%;
     background: url("images/crystal_cave.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -136,7 +135,7 @@
 }
 
 .parallax_forgotten_fortress {
-    height: auto;
+    height: 100%;
     background: url("images/forgotten_fortress.png");
     background-attachment: fixed;
     background-repeat: none;
@@ -151,7 +150,6 @@
 }
 
 /*////////////////////////////////////////////////////////////// TEXT OVER bgimg /////////////////////////////////////////////////////////////////////////*/
-
 
 .content {
     background-color: rgba(0, 0, 0, 0.5);
@@ -420,11 +418,4 @@ table {
 
 
     }
-}
-
-
-/*////////////////////////////////////////////////////////////// AFFICHAGE TEL /////////////////////////////////////////////////////////////////////////*/
-
-@media screen and (max-width: 1200px) {
-    /* affichage tel */
 }

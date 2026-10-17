@@ -101,12 +101,12 @@
     </table>
     <div class="billeterie">
         <a href="<?php
-                    if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
-                        echo 'espaceclient.php';
-                    } else {
-                        echo 'connexion.php';
-                    }
-                    ?>"> Reserver une place </a>
+            if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
+                echo 'espaceclient.php';
+            } else {
+                echo 'connexion.php';
+            }
+            ?>"> Reserver une place </a>
     </div>
 </body>
 

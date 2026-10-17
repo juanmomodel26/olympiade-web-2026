@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['email']) && $_SESSION['email']=='admin')
+{
+?>
+
 <html>
 
 <head>
@@ -71,3 +77,10 @@
 </body>
 
 </html>
+
+
+<?php }
+
+else{
+header("Location: connexion.php");
+}
