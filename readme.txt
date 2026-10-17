@@ -23,7 +23,7 @@ création des utilisateurs :
 - admin : nom d'utilisateur "admin", mdp 12-30 char
 - user : email, mdp 12-30char
 
-Figma : pas fait 
+Figma : https://www.figma.com/design/BbDjns1vcDYohMnOX805Xt/Sans-titre?node-id=0-1&p=f&t=N9vVyLN9oov0AVg4-0
 
 Palier 1 :
 - page d'accueil, listing des attractions
@@ -52,7 +52,3 @@ Palier 4 :
 - Utilisation de requetes préparées pour limiter la possibilité d'injections sql 
 - Hashage des mot de passe utilisateur et admin
 - utilisateur unique en base de données pour simplifier la gestion des données
-
-
-
-
