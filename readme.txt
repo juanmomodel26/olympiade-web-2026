@@ -52,3 +52,7 @@ Palier 4 :
 - Utilisation de requetes préparées pour limiter la possibilité d'injections sql 
 - Hashage des mot de passe utilisateur et admin
 - utilisateur unique en base de données pour simplifier la gestion des données
+
+///////////////////// BUGS //////////////////////
+
+- modification possible du prix d'achat des billets
