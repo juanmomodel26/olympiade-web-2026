@@ -9,13 +9,13 @@ $taille = $_POST['taille_min_visiteur'];
 $status = $_POST['status'];
 $id = $_POST['id'];
 
-
 $stmt->bindParam(":univers", $univers);
 $stmt->bindParam(":desc", $desc);
 $stmt->bindParam(":image", $image);
 $stmt->bindParam(":taille", $taille);
 $stmt->bindParam(":status", $status);
 $stmt->bindParam(":id", $id);
+
 $stmt->execute();
 
 $result = $stmt->execute();

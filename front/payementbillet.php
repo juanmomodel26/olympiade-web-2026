@@ -25,6 +25,7 @@
         <!-- <form action="../back/achatbillet.php" method="POST"> -->
         <form id="formconfirm" action="../back/achatbillet.php" method="POST">
             <?php
+            session_start();
             $type = $_POST['type'];
             $nombre = $_POST['nombre'];
             if ($type == 1) {
@@ -42,10 +43,10 @@
             <br><br>
             <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="[^[0-9]{4}( [0-9]{4}){3}$]">
             <input type="text" placeholder="xxx" pattern="[^[0-9]{3}$]">
-            <input type="hidden" name="email" value="<?= $email = $_POST['email']; ?>">
+            <input type="hidden" name="email" value="<?= $email = $_SESSION['email']; ?>">
             <input type="hidden" name="type" value="<?= $type;?>">
             <input type="hidden" name="nombre" value="<?= $nombre; ?>">
-            <input type="hidden" name="date" value="<?= $email = $_POST['date']; ?>">
+            <input type="hidden" name="date" value="<?= $date = $_POST['date']; ?>">
             <input type="submit" value="confirmer le payement">
         </form>
 

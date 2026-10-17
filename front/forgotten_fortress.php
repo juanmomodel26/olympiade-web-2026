@@ -14,7 +14,6 @@
     <header>
         <nav class="navbar">
             <a href="../index.html">WonderLand</a>
-
             <div class="dropdown">
                 <button class="dropbutton">Attractions</button>
                 <div class="dropdown-content">

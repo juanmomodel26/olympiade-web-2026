@@ -6,7 +6,9 @@ $user = $_POST['username'];
 $mdp = $_POST['password'];
 
 $stmt->bindParam(":name", $user);
+
 $stmt->execute();
+
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $name = $result['name'];

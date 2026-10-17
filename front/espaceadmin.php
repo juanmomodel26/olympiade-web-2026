@@ -3,7 +3,6 @@ session_start();
 if(isset($_SESSION['user']) && $_SESSION['user']=='admin')
 {
 ?>
-
 <html>
 
 <head>
@@ -77,10 +76,7 @@ if(isset($_SESSION['user']) && $_SESSION['user']=='admin')
 </body>
 
 </html>
-
-
 <?php }
-
 else{
     header("Location: connexion.php");
 }

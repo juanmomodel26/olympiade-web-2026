@@ -22,20 +22,24 @@ $stmt->bindParam(":status", $status);
 if ($heureActuelle >= 8 && $heureActuelle <= 19) {
     while ($nmb > 0) {
         $req = $bdd->prepare("select max(id) from billet");
+
         $req->execute();
+        
         $id = $req->fetchColumn();
         $code = password_hash($id, PASSWORD_DEFAULT);
+        
         $stmt->bindParam(":code", $code);
         $stmt->execute();
+
         $nmb--;
         header("Location: ../front/espaceclient.php");
     }
 }else{
     echo("billeterie fermée");
     ?>
-    <!-- <form action="../front/espaceclient.php">
+    <form action="../front/espaceclient.php">
         <input type="submit" value="retourner dane l'espace client">
-    </form> -->
+    </form>
 
     <?php
 }

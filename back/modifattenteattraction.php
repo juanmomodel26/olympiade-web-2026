@@ -7,9 +7,11 @@ $stmt = $bdd->prepare("insert into attente (id_attraction,time_,heure) values (:
 $time = $_POST['time'];
 $id_attraction = $_POST['id'];
 $heure = date("Y-m-d H:i:s", time());
+
 $stmt->bindParam(":id_attraction", $id_attraction);
 $stmt->bindParam(":time", $time);
 $stmt->bindParam(":heure", $heure);
+
 $result = $stmt->execute();
 
 if ($result) {
