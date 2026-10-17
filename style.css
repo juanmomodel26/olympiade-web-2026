@@ -376,7 +376,7 @@ table {
 #formconfirm,
 .formachat,
 .formretour,
-.espaceadmin form {
+.espaceadmin {
     justify-content: center;
     display: inline-block;
     text-align: center;
@@ -414,8 +414,5 @@ table {
 
         font-family: Georgia, serif;
         font-size: 15px;
-
-
-
     }
 }
