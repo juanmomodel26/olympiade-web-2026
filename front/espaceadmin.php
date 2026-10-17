@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['email']) && $_SESSION['email']=='admin')
+if(isset($_SESSION['user']) && $_SESSION['user']=='admin')
 {
 ?>
 

@@ -1,6 +1,10 @@
 
 <html>
-
+<?php 
+session_start();
+if (isset($_SESSION['email']) && $_SESSION['email'] !== '') {
+                header("Location: espaceclient.php"); 
+            } else {  ?>
 <head>
     <meta charset="utf-8">
     <title>Connexion</title>
@@ -42,3 +46,4 @@
 </body>
 
 </html>
+<?php } ?>

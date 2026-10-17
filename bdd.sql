@@ -65,5 +65,5 @@ insert into tarifs (type,prix) value (3,0);
 
 insert into attraction (desc_,image,taille_min_visiteur,status,univers) value ("dragon_flight","/images/dragon_flight",120,"ouvert","fantasy");
 insert into attraction (desc_,image,taille_min_visiteur,status,univers) value ("crystal_cave","/images/crystal_cave",150,"ouvert","fantasy");
-insert into attraction (desc_,image,taille_min_visiteur,status,univers) value ("knight_tournament","/images/knight_tournament",0,"fermé","medival");
+insert into attraction (desc_,image,taille_min_visiteur,status,univers) value ("knight_tournament","/images/knight_tournament",0,"fermee","medival");
 insert into attraction (desc_,image,taille_min_visiteur,status,univers) value ("forgotten_fortress","/images/forgotten_fortress",120,"ouvert","medival");
